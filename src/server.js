@@ -18,9 +18,6 @@ module.exports = async function (fastify, opts) {
     methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
   });
 
-  fastify.register(require("@fastify/multipart"));
-  fastify.register(require("@fastify/formbody"));
-
   fastify.register(require("@fastify/swagger"), {});
   fastify.register(require("@fastify/swagger-ui"), {
     routePrefix: "/docs",

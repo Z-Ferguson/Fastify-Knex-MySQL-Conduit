@@ -26,8 +26,7 @@
     "fastify": "^4.0.0",
     "fastify-cli": "^5.7.1",
     "fastify-plugin": "^4.0.0",
-    "knex": "^2.4.2",
-    "mysql2": "^3.2.4"
+    "knex": "^2.4.2"
   },
   "devDependencies": {
     "tap": "^16.1.0"
