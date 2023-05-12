@@ -1,6 +1,6 @@
 const envSchema = require("env-schema");
 const S = require("fluent-json-schema");
-// const knexconf = require("../../knexfile");
+const knexconf = require("../../knexfile");
 
 async function getConfig() {
   const env = envSchema({
@@ -52,7 +52,7 @@ async function getConfig() {
       jwtIssuer: env.JWT_ISSUER,
       hashSaltRounds: env.HASH_SALT_ROUNDS,
     },
-    // knex: knexconf[env.NODE_ENV],
+    knex: knexconf[env.NODE_ENV],
     apilayer: {
       key: env.APILAYER_KEY,
     },

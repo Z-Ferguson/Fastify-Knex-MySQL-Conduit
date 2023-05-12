@@ -31,7 +31,9 @@
     "fastify-plugin": "^4.0.0",
     "fluent-json-schema": "^4.1.0",
     "knex": "^2.4.2",
-    "pino": "^8.12.1"
+    "pg": "^8.10.0",
+    "pino": "^8.12.1",
+    "slug": "^8.2.2"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.0.0",
