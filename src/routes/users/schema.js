@@ -2,7 +2,7 @@ const S = require("fluent-json-schema");
 
 const User = S.object()
   .prop("email", S.string().required())
-  .prop("token", S.string().required())
+  // .prop("token", S.string().required())
   .prop("username", S.string().required())
   .prop("bio", S.string().required())
   .prop("image", S.string().required());
